@@ -47,6 +47,10 @@ module.exports = class extends Generator {
     ];
 
     fs.readdir(this.sourceRoot(appTemplatePath), (err, files) => {
+      if (err) {
+        throw err;
+      }
+
       const filesToCopy = files.filter(file => excludeList.indexOf(file) === -1);
 
       filesToCopy.forEach(file => {
