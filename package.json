@@ -1,6 +1,6 @@
 {
   "name": "generator-backbone-next",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Create Backbone.js projects utilizing ES6+ and Webpack",
   "homepage": "",
   "author": {
