@@ -31,7 +31,7 @@
     "jest-cli": "^20.0.0"
   },
   "dependencies": {
-    "backbone-next-template": "0.0.2",
+    "backbone-next-template": "0.0.3",
     "chalk": "^1.1.3",
     "yeoman-generator": "^1.0.0",
     "yosay": "^2.0.0"
