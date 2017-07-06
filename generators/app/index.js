@@ -12,7 +12,7 @@ module.exports = class extends Generator {
     return this
       .prompt(prompts)
       .then(answers => {
-        this.appname = answers.appName;
+        this.appName = answers.appName;
 
         this.config.set('appName', this.appName);
       });
