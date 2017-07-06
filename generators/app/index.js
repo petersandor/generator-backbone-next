@@ -30,8 +30,9 @@ module.exports = class extends Generator {
       repository: '',
       keywords: [],
       author: 'Thy name shalt be placeth here',
-      devDepencies: defaultPackageInfo.devDepencies,
-      dependecies: defaultPackageInfo.dependencies
+      devDependencies: defaultPackageInfo.devDependencies,
+      dependecies: defaultPackageInfo.dependencies,
+      jest: defaultPackageInfo.jest
     };
 
     this.fs.writeJSON(this.destinationPath('package.json'), newPackageInfo);
