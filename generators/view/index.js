@@ -1,6 +1,4 @@
 const Generator = require('yeoman-generator');
-const path = require('path');
-const fs = require('fs');
 
 module.exports = class extends Generator {
 
@@ -9,11 +7,23 @@ module.exports = class extends Generator {
   }
 
   writing(name) {
+    // TODO: handle input, capitalize for class decl.,
+    // trusting the user with choosing a reasonable class name
+    let fileName = name.toLowerCase();
     console.log('writing', name);
 
+    // View template
     this.fs.copyTpl(
-      this.templatePath('_template.js'),
-      this.destinationPath(`src/views/${name}/${name}.ts`), {
+      this.templatePath('_view.template.js'),
+      this.destinationPath(`src/views/${fileName}/${fileName}.ts`), {
+        name
+      }
+    );
+
+    // Test template
+    this.fs.copyTpl(
+      this.templatePath('_test.template.js'),
+      this.destinationPath(`src/views/${fileName}/${fileName}.test.ts`), {
         name
       }
     );

@@ -4,7 +4,7 @@ import * as _ from 'underscore';
 import { IBaseViewOptions } from '../base/base.view';
 import PageView from '../page/page.view';
 
-class <%= name %> extends Backbone.View<Backbone.Model> {
+class <%= name %>View extends Backbone.View<Backbone.Model> {
 	page: PageView;
 
 	constructor(options: IBaseViewOptions = {}) {
@@ -30,4 +30,4 @@ class <%= name %> extends Backbone.View<Backbone.Model> {
 	}
 }
 
-export default <%= name %>;
+export default <%= name %>View;
