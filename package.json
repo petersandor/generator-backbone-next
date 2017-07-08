@@ -54,6 +54,7 @@
       "capitalized-comments": 0
     }
   },
+  "eslintIgnore": ["generators/*/templates/*"],
   "repository": "petersandor/generator-backbone-next",
   "license": "MIT"
 }
