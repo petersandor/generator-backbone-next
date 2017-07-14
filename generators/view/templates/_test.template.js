@@ -1,6 +1,6 @@
 import * as Backbone from 'backbone';
 
-import App from '../../views/<%= name %>/<%= name %>.view';
+import <%= name %> from './<%= lowerCaseName %>.view';
 
 describe('<%= name %> view', () => {
 

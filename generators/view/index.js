@@ -9,13 +9,14 @@ module.exports = class extends Generator {
   writing(name) {
     // TODO: handle input, capitalize for class decl.,
     // trusting the user with choosing a reasonable class name
-    let fileName = name.toLowerCase();
+    let lowerCaseName = name.toLowerCase();
     console.log('writing', name);
 
     // View template
     this.fs.copyTpl(
       this.templatePath('_view.template.js'),
-      this.destinationPath(`src/views/${fileName}/${fileName}.view.ts`), {
+      this.destinationPath(`src/views/${lowerCaseName}/${lowerCaseName}.view.ts`), {
+        lowerCaseName,
         name
       }
     );
@@ -23,7 +24,8 @@ module.exports = class extends Generator {
     // Test template
     this.fs.copyTpl(
       this.templatePath('_test.template.js'),
-      this.destinationPath(`src/views/${fileName}/${fileName}.test.ts`), {
+      this.destinationPath(`src/views/${lowerCaseName}/${lowerCaseName}.test.ts`), {
+        lowerCaseName,
         name
       }
     );
