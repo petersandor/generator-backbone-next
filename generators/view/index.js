@@ -15,7 +15,7 @@ module.exports = class extends Generator {
     // View template
     this.fs.copyTpl(
       this.templatePath('_view.template.js'),
-      this.destinationPath(`src/views/${fileName}/${fileName}.ts`), {
+      this.destinationPath(`src/views/${fileName}/${fileName}.view.ts`), {
         name
       }
     );
