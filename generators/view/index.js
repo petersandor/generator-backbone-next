@@ -21,6 +21,14 @@ module.exports = class extends Generator {
       }
     );
 
+    // View template handlebars template
+    this.fs.copyTpl(
+      this.templatePath('_template.template.hbs'),
+      this.destinationPath(`src/views/${lowerCaseName}/${lowerCaseName}.template.hbs`), {
+        name
+      }
+    );
+
     // Test template
     this.fs.copyTpl(
       this.templatePath('_test.template.js'),
