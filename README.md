@@ -1,4 +1,6 @@
-# generator-backbone-next [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
+# generator-backbone-next
 > Create Backbone.js projects with TypeScript, ES6+ and Webpack
 
 ## Installation
