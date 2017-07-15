@@ -1,13 +1,13 @@
 import * as Backbone from 'backbone';
 
-import <%= name %> from './<%= lowerCaseName %>.view';
+import <%= name %>View from './<%= lowerCaseName %>.view';
 
 describe('<%= name %> view', () => {
 
   let view;
 
-	beforeAll(() => {
-		view = new <%= name %>();
+	beforeEach(() => {
+		view = new <%= name %>View();
 	});
 
 	it('should create', () => {
