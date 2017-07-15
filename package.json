@@ -1,6 +1,6 @@
 {
   "name": "generator-backbone-next",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Create Backbone.js projects utilizing ES6+ and Webpack",
   "homepage": "",
   "author": {
@@ -54,7 +54,9 @@
       "capitalized-comments": 0
     }
   },
-  "eslintIgnore": ["generators/*/templates/*"],
+  "eslintIgnore": [
+    "generators/*/templates/*"
+  ],
   "repository": "petersandor/generator-backbone-next",
   "license": "MIT"
 }
