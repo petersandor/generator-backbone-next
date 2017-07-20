@@ -10,7 +10,6 @@ module.exports = class extends Generator {
     // TODO: handle input, capitalize for class decl.,
     // trusting the user with choosing a reasonable class name
     let lowerCaseName = name.toLowerCase();
-    console.log('writing', name);
 
     // View template
     this.fs.copyTpl(
