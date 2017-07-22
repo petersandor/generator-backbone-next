@@ -18,6 +18,12 @@ Then generate your new project:
 yo backbone-next
 ```
 
+Subgenerators:
+
+```
+yo backbone-next:(view|model|collection) name
+```
+
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
