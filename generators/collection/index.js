@@ -11,10 +11,19 @@ module.exports = class extends Generator {
     // trusting the user with choosing a reasonable class name
     let lowerCaseName = name.toLowerCase();
 
-    // View template
+    // Collection template
     this.fs.copyTpl(
       this.templatePath('_collection.template.js'),
       this.destinationPath(`src/collections/${lowerCaseName}/${lowerCaseName}.collection.ts`), {
+        lowerCaseName,
+        name
+      }
+    );
+
+    // Test template
+    this.fs.copyTpl(
+      this.templatePath('_test.template.js'),
+      this.destinationPath(`src/collections/${lowerCaseName}/${lowerCaseName}.collection.test.ts`), {
         lowerCaseName,
         name
       }
