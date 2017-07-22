@@ -31,7 +31,7 @@ module.exports = class extends Generator {
     // Test template
     this.fs.copyTpl(
       this.templatePath('_test.template.js'),
-      this.destinationPath(`src/views/${lowerCaseName}/${lowerCaseName}.test.ts`), {
+      this.destinationPath(`src/views/${lowerCaseName}/${lowerCaseName}.view.test.ts`), {
         lowerCaseName,
         name
       }
