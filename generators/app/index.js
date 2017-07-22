@@ -30,7 +30,7 @@ module.exports = class extends Generator {
       repository: '',
       keywords: [],
       author: 'Thy name shalt be placeth here',
-      dependecies: defaultPackageInfo.dependencies,
+      dependencies: defaultPackageInfo.dependencies,
       devDependencies: defaultPackageInfo.devDependencies,
       jest: defaultPackageInfo.jest
     };
