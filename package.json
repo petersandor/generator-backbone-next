@@ -31,7 +31,7 @@
     "yeoman-test": "^1.6.0"
   },
   "dependencies": {
-    "backbone-next-template": "0.0.5",
+    "backbone-next-template": "^0.1.0",
     "chalk": "^2.0.1",
     "yeoman-generator": "^1.0.0",
     "yosay": "^2.0.0"
